@@ -20,7 +20,7 @@ Instead of relying on manual inspection, the system automatically filters spam c
 - **Programming Language:** Python  
 - **Machine Learning:** Scikit-learn  
 - **NLP Techniques:** TF-IDF Vectorization  
-- **Models:** Logistic Regression  
+- **Models:** SVM
 - **Backend (Planned):** Flask / FastAPI  
 - **Frontend (Planned):** Chrome Extension  
 - **API (Planned):** YouTube Data API v3  
@@ -37,9 +37,9 @@ Instead of relying on manual inspection, the system automatically filters spam c
 
 ### 🔹 Spam Detection Model
 - Applied TF-IDF vectorization on comment text
-- Trained a Logistic Regression model for spam detection
+- Trained SVM for spam detection
 - Evaluated model using accuracy, precision, recall, and confusion matrix
-- Achieved ~89% accuracy on real-world YouTube spam data
+- Achieved ~92% accuracy on real-world YouTube spam data
 - Tested the model with custom user comments
 
 📌 **Design Decision:**  
@@ -59,7 +59,7 @@ Spam detection is performed **before sentiment analysis** to ensure only genuine
 
 ### 🔹 Sentiment Analysis Model
 - Train a sentiment classification model (Positive / Negative / Neutral)
-- Use TF-IDF and Logistic Regression
+- Use TF-IDF and SVM
 - Evaluate sentiment model performance
 
 ### 🔹 Backend Integration
